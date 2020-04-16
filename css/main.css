@@ -215,7 +215,7 @@ body {
   margin-bottom: 40px;
   background-color: #f2f2f2;
   border-radius: 15px;
-  padding: 50px;
+  padding: 1px;
   position: relative;
   text-align: center;
 }
@@ -232,10 +232,21 @@ body {
   font-weight: bold;
   background-color: rgba(112, 112, 112, 0.4);
   display: none;
+  cursor: pointer;
 }
 .our-work .row .project:hover .overlay {
   display: block;
 }
+.our-work .row .project img.web {
+    border-radius: 10px;
+}
+
+.our-work .row .project img.mob {
+    border-radius: 10px;
+    height: 600px;
+    width: 100%;
+}
+
 .our-work .number {
   position: absolute;
   right: 0;
@@ -654,6 +665,9 @@ body {
   width: 100%;
   height: 400px;
   object-fit: cover;
+}
+.owl-carousel .owl-item img:hover {
+    cursor: pointer;
 }
 @media (max-width: 411px) {
   .owl-carousel .owl-nav button.owl-prev {
